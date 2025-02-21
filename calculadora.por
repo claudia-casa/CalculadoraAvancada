@@ -56,6 +56,10 @@ programa {
       escreva("  0. Encerrar aplicativo\n")
       escreva("  1. Somar\n")
       escreva("  2. Subtrair\n")
+      escreva("  3. Multiplicar\n")
+      escreva("  4. Dividir\n")
+      escreva("  5. Resto\n")
+      escreva("  6. Número Ímpar\n")
       escreva("Opção: ")  
       leia(opcao)
       
