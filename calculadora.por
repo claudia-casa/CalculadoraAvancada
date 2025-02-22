@@ -46,6 +46,12 @@ programa {
     exibirResultado()
   }
 
+  funcao multiplicar() {
+    lerNumeros()
+    resultado = n1 * n2
+    exibirResultado()
+  }
+
   funcao menu() {
     inteiro opcao = -1
     
@@ -69,7 +75,11 @@ programa {
         somar()
       } senao se (opcao == 2) {
         subtrair()
-      } senao {
+      } 
+        senao se (opcao == 3) {
+        multiplicar()
+      }
+        senao {
         esperarTeclarEnter("\nOpção inválida")
       }
     }
