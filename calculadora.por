@@ -52,7 +52,7 @@ programa {
     exibirResultado()
   }
 
-funcao dividir() {
+  funcao dividir() {
   lerNumeros()
   se (n2 == 0) {
     escreva(" Erro: Divisão por zero!\n")
@@ -62,7 +62,11 @@ funcao dividir() {
     exibirResultado()
   }
 }
-
+  funcao calcularResto() {
+  lerNumeros()
+  resultado = n1 % n2
+  exibirResultado()
+}
   funcao menu() {
     inteiro opcao = -1
     
@@ -86,13 +90,13 @@ funcao dividir() {
         somar()
       } senao se (opcao == 2) {
         subtrair()
-      } 
-        senao se (opcao == 3) {
+      } senao se (opcao == 3) {
         multiplicar()
-      }
-      senao se (opcao == 4) {
+      } senao se (opcao == 4) {
         dividir()
-      }
+      } senao se (opcao == 5) {
+        calcularResto()
+}
         senao {
         esperarTeclarEnter("\nOpção inválida")
       }
