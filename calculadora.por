@@ -52,6 +52,17 @@ programa {
     exibirResultado()
   }
 
+funcao dividir() {
+  lerNumeros()
+  se (n2 == 0) {
+    escreva(" Erro: Divisão por zero!\n")
+    esperarTeclarEnter(" ")
+  } senao {
+    resultado = n1 / n2
+    exibirResultado()
+  }
+}
+
   funcao menu() {
     inteiro opcao = -1
     
@@ -78,6 +89,9 @@ programa {
       } 
         senao se (opcao == 3) {
         multiplicar()
+      }
+      senao se (opcao == 4) {
+        dividir()
       }
         senao {
         esperarTeclarEnter("\nOpção inválida")
