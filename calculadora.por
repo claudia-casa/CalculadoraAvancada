@@ -67,6 +67,18 @@ programa {
   resultado = n1 % n2
   exibirResultado()
 }
+
+funcao verificarImpar() {
+  escreva("\n Digite um número: ")
+  leia(n1)
+  se (n1 % 2 == 0) {
+    escreva(" ", n1, " é par\n")
+  } senao {
+    escreva(" ", n1, " é ímpar\n")
+  }
+  esperarTeclarEnter(" ")
+}
+
   funcao menu() {
     inteiro opcao = -1
     
@@ -96,8 +108,9 @@ programa {
         dividir()
       } senao se (opcao == 5) {
         calcularResto()
-}
-        senao {
+      }senao se (opcao == 6) {
+        verificarImpar()
+      } senao {
         esperarTeclarEnter("\nOpção inválida")
       }
     }
